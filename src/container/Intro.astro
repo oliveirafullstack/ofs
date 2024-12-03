@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import Profile from "../assets/images/profile.jpg"
+import Tecnologies from "../components/Tecnologies.astro";
+import iconTec from "../assets/icons/code.svg"
+import iconArrow from "../assets/icons/arrow-down.svg"
+ ---
+<section class=" bg-intro h-screen w-crren bg-cover bg-no-repeat">
+  <div class="wrapper">
+    <div class="w-[1040px] m-auto pt-[120px]">
+    <div class="mx-auto w-[680px]">
+    <Image class="  m-auto rounded-full border-2 border-sky-400 p-1 mb-14 hover:border-transparent transition-colors"
+      src={Profile} height="120" width="120" alt="Foto Perfil Emmanuel Oliveira" />
+      <div class=" relative   flex justify-center" >
+        <Image class="absolute top-[-90px] left-[355px] rotate-6"   src={ iconTec} alt="" /> 
+        </div> 
+      <p class="text-center subtitle text-base_500 pb-2">Hello World! Meu nome é <span class="text-blueColor">Emmanuel Oliveira</span>  e sou</p>
+      <h1 class="text-center pb-5 title-lg text-base_600">Desenvolvedor <span class="hover:text-blueColor">Fullstack</span></h1>
+      <p class="texto-sm text-base_400">Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+    </div>
+    <div class="pt-20 text-center">
+      <Tecnologies />
+    </div>
+    <div class="flex items-center justify-center  pt-28">
+      <Image src={iconArrow} alt="icone mova para baixo">
+  </div>
+ </div>
+</section>
+
+
+

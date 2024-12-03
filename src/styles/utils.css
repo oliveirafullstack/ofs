@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-lg {
+  @apply font-serif font-bold text-[3.5rem] leading-tight;
+}
+.title-md {
+  @apply font-serif font-bold text-2xl leading-tight;
+}
+.title-sm {
+  @apply font-serif font-bold text-base leading-tight;
+}
+.subtitle {
+  @apply font-mono font-normal text-xl leading-tight;
+}
+.texto-md {
+  @apply font-sans font-normal text-base leading-normal;
+}
+.texto-sm {
+  @apply font-sans font-normal text-sm leading-normal;
+}

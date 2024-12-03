@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import Web from "../assets/icons/web.svg";
+import Api from "../assets/icons/api.svg";
+import devOps from "../assets/icons/devOps.svg";
+---
+
+<section class="bg-base_100">
+  <p class="text-center subtitle text-redColor mb-2 mt-[88px]">Meus Serviços</p>
+  <h2 class="text-center title-md text-base_600 mb-14">
+    Como posso ajudar o seu Négocio
+  </h2>
+  <ul class="flex justify-center mt-32 mb-32 gap-6">
+    <li class="w-[280px] p-5 border border-base_200 rounded-xl">
+      <Image src={Web} height={33} alt="icone de serviços web" />
+      <h3 class="title-sm text-base_600 mt-5">Web Sites e Aplicativos</h3>
+      <p class="texto-sm mt-2 text-base_500">Desenvolvimento de Interfaces</p>
+    </li>
+    <li class="w-[280px] p-5 border border-base_200 rounded-xl">
+      <Image src={Api} height={33} alt="icone de serviços web" />
+      <h3 class="title-sm text-base_600 mt-5">API e banco de dados</h3>
+      <p class="texto-sm mt-2 text-base_500">Criação de serviços do sistema</p>
+    </li>
+    <li class="w-[280px] p-5 border border-base_200 rounded-xl">
+      <Image src={devOps} height={33} alt="icone de serviços web" />
+      <h3 class="title-sm text-base_600 mt-5">DevOps</h3>
+      <p class="texto-sm mt-2 text-base_500">
+        Gestão e infraestrutura da aplicação
+      </p>
+    </li>
+  </ul>
+</section>

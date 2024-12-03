@@ -1,10 +1,98 @@
 ---
-
+import arrow from "../assets/icons/arrow.svg";
+import Image1 from "../assets/images/image-01.png";
+import Image2 from "../assets/images/image-02.png";
+import Image3 from "../assets/images/image-03.png";
+import Image4 from "../assets/images/image-04.png";
+import Image5 from "../assets/images/image-05.png";
+import Image6 from "../assets/images/image-06.png";
+import { Image } from "astro:assets";
 ---
-<section class=" bg-base_300">
-  <div class="wrapper">
-  </div>
-<p class=" subtitle text-center pt-16 text-redColor pb-2">Meus Trabalhos</p>
-<h2 class="title-md text-center text-base_600">Veja os Projetos em Destaque</h2>
-</section>
 
+<section class="bg-base_200">
+  <div class="pb-36">
+    <p class="subtitle text-center pt-16 text-redColor pb-2">Meus Trabalhos</p>
+    <h2 class="title-md text-center text-base_600">
+      Veja os Projetos em Destaque
+    </h2>
+    <div class="justify-center mt-14 w-[1040px] m-auto">
+      <ul class="mx-auto flex-wrap flex gap-6">
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image1} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Travelgran</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Rede social onde as pessoas mostram os registros de suas viagens
+              pelo mundo
+            </p>
+          </a>
+        </li>
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image2} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Tech News</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Homepage de um portal de notícias sobre a área de tecnologia
+            </p>
+          </a>
+        </li>
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image3} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Página de Receitas</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Página com o passo a passo de uma receita para cupcakes
+            </p>
+          </a>
+        </li>
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image4} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Zigen</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Landing Page completa e responsiva de um aplicativo de Karaokê
+            </p>
+          </a>
+        </li>
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image5} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Refund</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Página com as principais informações para quem quer viajar para
+              Busan
+            </p>
+          </a>
+        </li>
+        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+          <a href="#">
+            <Image src={Image6} alt="imagem do travelgran página de viagens" />
+            <div class="flex items-center mt-6 gap-2">
+              <h2 class="title-sm text-base_600">Busan</h2>
+              <img width={8} height={8} src={arrow.src} alt="ver on-line" />
+            </div>
+            <p class="texto-sm text-base_500 mt-2">
+              Página com as principais informações para quem quer viajar para
+              Busan
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

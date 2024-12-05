@@ -1,32 +1,37 @@
 ---
-import "../styles/utils.css"
+import Footer from "../components/Footer.astro";
+import "../styles/utils.css";
 ---
-
 
 <!doctype html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />    <link
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap"
       rel="stylesheet"
     />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/code.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Portfolio Emmanuel Oliveira</title>
-	</head>
-	<body class="bg-base_100">
-		<slot />
-	</body>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/code.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio Emmanuel Oliveira</title>
+  </head>
+  <body class="bg-base_100">
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
 </style>

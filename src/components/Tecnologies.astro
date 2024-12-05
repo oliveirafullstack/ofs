@@ -1,58 +1,131 @@
 ---
-import { Image } from "astro:assets"
-import iconJavaScript from "../assets/icons/JavaScript.svg"
-import iconReact from "../assets/icons/react.svg"
-import iconGitHub from "../assets/icons/git.svg"
-import iconCSs from "../assets/icons/css.svg"
-import iconNode from "../assets/icons/node.svg"
-import iconHtml from "../assets/icons/html.svg"
-
+import { Image } from "astro:assets";
+import iconJavaScript from "../assets/icons/JavaScript.svg";
+import iconReact from "../assets/icons/react.svg";
+import iconHtml from "../assets/icons/html.svg";
+import iconGitHub from "../assets/icons/git.svg";
+import iconCSs from "../assets/icons/css.svg";
+import iconNode from "../assets/icons/node.svg";
+import iconNext from "../assets/icons/next.svg";
+import iconSASS from "../assets/icons/sass.svg";
+import iconAstro from "../assets/icons/astro_dark.svg";
 ---
-<section class="flex items-center justify-center"> 
-<ul class="flex items-center gap-4">
-   <li class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all ">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconGitHub} alt="icone de IavaScript" />
-      <span class="text-base_500 texto-md ">GitHub</span>
-    </div>
-  </li>
-  <li class="bg-base_300 rounded-3xl w-max h-10  hover:bg-base_100 transition-all ">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconHtml} alt="icone de IavaScript" />
-      <span class="text-base_500 texto-md ">HTML</span>
-    </div>
-  </li>
- 
-  <li class="bg-base_300 rounded-3xl w-max h-10  hover:bg-base_100 transition-all ">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconCSs} alt="icone de IavaScript" />
-      <span class="text-base_500 texto-md ">CSS</span>
-    </div>
-  </li>
-  <li class="bg-base_300 rounded-3xl w-max h-10  hover:bg-base_100 transition-all ">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconJavaScript} alt="icone de IavaScript" />
-      <span class="text-base_500 texto-md">JavaScript</span>
-    </div>
-  </li>
-  <li class="bg-base_300 rounded-3xl w-max h-10  hover:bg-base_100 transition-all ">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconReact} alt="icone de IavaScript" />
-      <span class="text-base_500 texto-md ">React</span>
-    </div>
-  </li>
-  <li class="bg-base_300 rounded-3xl w-max h-10  hover:bg-base_100 transition-all">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconNode} alt="icone da Tecnologia NodeJs " />
-      <span class="text-base_500  texto-md ">NodeJs</span>
-    </div>
-  </li>
-  <li class="bg-base_300 rounded-3xl w-max h-10 border-transparent hover:bg-base_100 transition-all">
-    <div class="flex gap-2 items-center px-4 py-2">
-      <Image height={20} width={20} src={iconNode} alt="icone da Tecnologia NodeJs " />
-      <span class="text-base_500 texto-md ">NodeJs</span>
-    </div>
-  </li>
+
+<section class="flex items-center justify-center space-y-8 mb-8">
+  <ul class="flex items-center justify-center flex-wrap gap-4 p-4">
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconGitHub}
+          alt="icone de IavaScript"
+        />
+        <span class="text-base_500 texto-md">GitHub</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconHtml}
+          alt="icone de IavaScript"
+        />
+        <span class="text-base_500 texto-md">HTML</span>
+      </div>
+    </li>
+
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image height={20} width={20} src={iconCSs} alt="icone de IavaScript" />
+        <span class="text-base_500 texto-md">CSS</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconJavaScript}
+          alt="icone de IavaScript border border-transparent hover:border-blueColor"
+        />
+        <span class="text-base_500 texto-md">JavaScript</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconReact}
+          alt="icone de IavaScript"
+        />
+        <span class="text-base_500 texto-md">React</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconNode}
+          alt="icone da Tecnologia NodeJs "
+        />
+        <span class="text-base_500 texto-md">NodeJs</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 border-transparent hover:bg-base_100 transition-all border border-transparent hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={26}
+          src={iconSASS}
+          alt="icone da Tecnologia NodeJs"
+        />
+        <span class="text-base_500 texto-md">SASS</span>
+      </div>
+    </li>
+
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 border-transparent hover:bg-base_100 transition-all border hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={16}
+          width={16}
+          src={iconAstro}
+          alt="icone da Tecnologia NodeJs "
+        />
+        <span class="text-base_500 texto-md">AstroJs</span>
+      </div>
+    </li>
+    <li
+      class="bg-base_300 rounded-3xl w-max h-10 border-transparent hover:bg-base_100 transition-all border hover:border-blueColor"
+    >
+      <div class="flex gap-2 items-center px-4 py-2">
+        <Image
+          height={20}
+          width={20}
+          src={iconNext}
+          alt="icone da Tecnologia NodeJs "
+        />
+        <span class="text-base_500 texto-md">NextJs</span>
+      </div>
+    </li>
   </ul>
 </section>
-

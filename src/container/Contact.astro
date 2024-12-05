@@ -1,0 +1,125 @@
+---
+import Linkedin from "../assets/icons/Linkedin.svg";
+import arrowBlue from "../assets/icons/arrowBlue.svg";
+import Github from "../assets/icons/gitHub.svg";
+import Email from "../assets/icons/e-mail.svg";
+import Instagran from "../assets/icons/instagran.svg";
+import Footer from "../components/Footer.astro";
+type Props = {};
+
+const {} = Astro.props;
+---
+
+<section class="bg-contacts bg-cover h-screen w-screen bg-no-repeat">
+  <p class="text-center subtitle pt-32 text-purpleColor">Contatos</p>
+  <h2 class="text-center title-md pt-2 text-base_600">
+    Gostou do meu trabalho?
+  </h2>
+  <p class="text-center pt-2 texto-md text-base_500">
+    Entre em contato ou acompanhe as minhas redes sociais!
+  </p>
+  <ul class="flex flex-col items-center pt-12 gap-4 p-4 sm:pb-56 pb-32">
+    <li
+      class="w-[380px] h-[68px] bg-base_300 rounded-lg flex items-center p-5 border border-transparent hover:border-blueColor"
+    >
+      <a
+        target="_blank"
+        class="flex flex-1 items-center"
+        href="https://www.linkedin.com/in/oliveira-emmanuel/"
+      >
+        <div>
+          <div>
+            <img
+              src={Linkedin.src}
+              alt="icone de acesso ao Github do Desenvolvedor Emmanuel Marcos de Oliveira"
+            />
+          </div>
+        </div>
+        <div class="flex item center flex-1 pl-3">
+          <p class="texto-md text-base_500">Linledin</p>
+        </div>
+        <div>
+          <img
+            class="block"
+            src={arrowBlue.src}
+            alt="icone de acesso Instagran do Desenvolvedor Emmanuel Marcos de Oliveira"
+          />
+        </div>
+      </a>
+    </li>
+    <li
+      class="w-[380px] h-[68px] bg-base_300 rounded-lg flex items-center p-5 border border-transparent hover:border-blueColor"
+    >
+      <a
+        target="_blank"
+        class="flex flex-1 items-center"
+        href="https://www.instagram.com/oliveiradevfullstack?igsh=MWMycDRraHppYTNvdg=="
+      >
+        <div>
+          <div>
+            <img
+              src={Instagran.src}
+              alt="icone de acesso ao Github do Desenvolvedor Emmanuel Marcos de Oliveira"
+            />
+          </div>
+        </div>
+        <div class="flex item center flex-1 pl-3">
+          <p class="texto-md text-base_500">Instagran</p>
+        </div>
+        <div>
+          <img
+            class="block"
+            src={arrowBlue.src}
+            alt="icone de acesso Instagran do Desenvolvedor Emmanuel Marcos de Oliveira"
+          />
+        </div>
+      </a>
+    </li>
+    <li
+      class="w-[380px] h-[68px] bg-base_300 rounded-lg flex items-center p-5 border border-transparent hover:border-blueColor"
+    >
+      <a
+        target="_blank"
+        class="flex flex-1 items-center"
+        href="https://github.com/emmanuelmarcosdeoliveira"
+      >
+        <div>
+          <div>
+            <img
+              src={Github.src}
+              alt="icone de acesso ao Github do Desenvolvedor Emmanuel Marcos de Oliveira"
+            />
+          </div>
+        </div>
+        <div class="flex item center flex-1 pl-3">
+          <p class="texto-md text-base_500">Github</p>
+        </div>
+        <div>
+          <img
+            class="block"
+            src={arrowBlue.src}
+            alt="icone de acesso para envio de email do Desenvolvedor Emmanuel Marcos de Oliveira"
+          />
+        </div>
+      </a>
+    </li>
+    <li
+      class="w-[380px] h-[68px] bg-base_300 rounded-lg flex items-center p-5 border border-transparent hover:border-blueColor"
+    >
+      <a class="flex flex-1 items-center" href="mailto:osf.dev.br@gmail.com">
+        <div>
+          <div>
+            <img src={Email.src} alt=" " />
+          </div>
+        </div>
+        <div class="flex item center flex-1 pl-3">
+          <p class="texto-md text-base_500">E-mail</p>
+        </div>
+        <div>
+          <img class="block" src={arrowBlue.src} alt="" />
+        </div>
+      </a>
+    </li>
+  </ul>
+  <Footer />
+</section>

@@ -9,15 +9,17 @@ import Image6 from "../assets/images/image-06.png";
 import { Image } from "astro:assets";
 ---
 
-<section class="bg-base_200">
+<section class="bg-base_200 pt-16 sm:pt-4">
   <div class="pb-36">
     <p class="subtitle text-center pt-16 text-redColor pb-2">Meus Trabalhos</p>
     <h2 class="title-md text-center text-base_600">
       Veja os Projetos em Destaque
     </h2>
-    <div class="justify-center mt-14 w-[1040px] m-auto">
-      <ul class="mx-auto flex-wrap flex gap-6">
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+    <div class="justify-center mt-14 m-auto flex flex-wrap">
+      <ul class="lg:grid-cols-3 md:grid-cols-2 grid gap-4 sm:grid-cols-1">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image1} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
@@ -30,7 +32,9 @@ import { Image } from "astro:assets";
             </p>
           </a>
         </li>
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image2} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
@@ -42,7 +46,9 @@ import { Image } from "astro:assets";
             </p>
           </a>
         </li>
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image3} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
@@ -54,7 +60,9 @@ import { Image } from "astro:assets";
             </p>
           </a>
         </li>
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image4} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
@@ -66,7 +74,9 @@ import { Image } from "astro:assets";
             </p>
           </a>
         </li>
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image5} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
@@ -79,7 +89,9 @@ import { Image } from "astro:assets";
             </p>
           </a>
         </li>
-        <li class="w-[320px] bg-base_300 p-3 rounded-xl">
+        <li
+          class="w-[320px] bg-base_300 p-3 rounded-xl border border-transparent hover:border-base_400"
+        >
           <a href="#">
             <Image src={Image6} alt="imagem do travelgran página de viagens" />
             <div class="flex items-center mt-6 gap-2">
